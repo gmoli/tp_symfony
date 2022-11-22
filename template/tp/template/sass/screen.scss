@@ -1,0 +1,173 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+
+$colorMain: #848484;
+$colorBgMain: #FFFFFF;
+$colorHead: #F2F2F2;
+$colorBgHead: #1C1C1C;
+$colorBgFooter: #302833;
+$colorFooter: #302833;
+
+#main {
+    color: $colorMain;
+    background-color:  $colorBgMain;
+
+    margin: 0 auto 0 auto;
+    p {
+        color: #111;
+        font-size: 2em;
+        font-style: Arial;
+        &:hover{
+            color: #FA5858;
+        }
+    }
+    h2 {
+        font-weight: bold;
+        font-size: 2em;
+        font-style: Arial;
+    }    
+
+
+
+}
+
+#header {
+    color:   $colorHead;
+    background-color:  $colorBgHead ;
+
+    h1 {
+        font-weight: bold;
+        font-size: 4em;
+        font-style: Arial;
+    }
+    h2 {
+        font-weight: bold;
+        font-size: 2em;
+        font-style: Arial;
+    }
+}
+
+
+
+#footer {
+    background-color: #fafafa;
+    bottom: 0;
+    box-shadow: 0 -3px 3px #ccc;
+    color: #666;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    position: fixed;
+    text-align: center;
+    text-shadow: 0 0 10px #bbb;
+    width: 100%;
+
+
+
+}
+
+#layout{
+    margin:auto;
+    left: 0px;
+    top:0px;
+    background-color: #FFFFFF;
+    height: 700px;
+}
+
+#submit {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px 10px 20px 10px;
+    border: 1px solid #ccc;
+    background: #ACFA58;
+    border-radius: 8px 8px 8px 8px;
+}
+
+#submit:hover {
+    background: #ddd;
+}
+
+
+#pedido_form{
+    background-color: #FFFFFF; 
+    border-left: 5px solid #555; 
+    border-right: 5px solid #555; 
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 0 #aaa;
+    margin: 1% 1% 1% 1%;
+    padding: 1% 1% 1% 1%;
+
+    tbody th, tbody td {
+        padding:5px;
+    }  
+}
+
+#caja{
+    background-color: #FFFFFF; 
+    border-left: 5px solid #555; 
+    border-right: 5px solid #555; 
+
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 0 #aaa;
+    margin: 1% 1% 1% 1%;
+    padding: 1% 1% 1% 1%;    
+
+}
+
+#tabla{
+
+    table {
+
+    }
+    caption {
+        text-align: center;
+        font: bold 16px arial, helvetica, sans-serif;
+        background: transparent;
+        padding:6px 4px 8px 0px;
+        color: #CC00FF;
+        text-transform: uppercase;
+    }
+    thead, tfoot {
+
+        text-align:left;
+        height:30px;
+    }
+    thead th, tfoot th {
+        padding:10px;
+    }
+    table a {
+        color: #333333;
+        text-decoration:none;
+        font-weight: bold;
+    }
+    table a:hover {
+        text-decoration:underline;
+        font-weight: bold;
+    }
+    tr.odd {
+        background: #f1f1f1;
+    }
+    tbody th, tbody td {
+        padding:5px;
+        border-collapse: collapse;
+        border: 1px solid #666666;
+        font: normal 12px verdana, arial, helvetica, sans-serif;
+        color: #363636;
+        background: #f6f6f6;
+        text-align:left;
+    }  
+
+
+}

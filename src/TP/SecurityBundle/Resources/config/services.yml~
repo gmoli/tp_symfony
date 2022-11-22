@@ -1,0 +1,7 @@
+parameters:
+#    utn_security.example.class: UTN\SecurityBundle\Example
+
+services:
+#    utn_security.example:
+#        class: %utn_security.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

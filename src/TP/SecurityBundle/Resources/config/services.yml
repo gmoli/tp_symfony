@@ -1,0 +1,7 @@
+parameters:
+#    tp_security.example.class: TP\SecurityBundle\Example
+
+services:
+#    tp_security.example:
+#        class: %utn_security.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

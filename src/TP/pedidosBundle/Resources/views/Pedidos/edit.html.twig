@@ -1,0 +1,30 @@
+{% extends 'TPpedidosBundle::layout.html.twig' %}
+
+{% block content %}    	
+  <div id="caja">  
+ 
+<a href="{{url('pedido_listar')}}">Listar pedidos</a>     
+<a>-</a>
+ <a href="{{url('logout')}}">Logout</a> 
+  </div>     
+
+<form action="{{ path('pedido_edit',{'id_pedido':id_pedido }) }}" method="post" >
+
+       <div > 
+
+          {{ form_widget(form) }}
+
+       </div>
+
+       <div >
+
+            <button type="reset" class="btn btn-default">Borrar</button>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
+       </div>
+
+</form>
+
+
+{% endblock %}

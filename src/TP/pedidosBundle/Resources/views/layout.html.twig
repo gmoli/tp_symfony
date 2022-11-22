@@ -1,0 +1,19 @@
+{% extends '::base.html.twig' %}
+{% block stylesheets %}    
+       {{ parent() }}    
+       <link href="{{ asset('bundles/tp/template/stylesheets/screen.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+{% block body %}    
+      <div id="layout">         
+              <div id="header">            
+                   <h1>Pedidos</h1>       
+              </div>       
+              <div id="main"  >            
+          
+                            {% block content %}   {% endblock %}            
+
+  
+              </div>        
+              <div id="footer">  <p>gmoli - {{"now"|date("Y")}}</p>  </div>   
+        </div>
+{% endblock %}

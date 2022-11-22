@@ -1,0 +1,224 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 16, ../sass/screen.scss */
+#main {
+  color: #848484;
+  background-color: white;
+  margin: 0 auto 0 auto;
+}
+/* line 21, ../sass/screen.scss */
+#main p {
+  color: #111;
+  font-size: 2em;
+  font-style: Arial;
+}
+/* line 25, ../sass/screen.scss */
+#main p:hover {
+  color: #FA5858;
+}
+/* line 29, ../sass/screen.scss */
+#main h2 {
+  font-weight: bold;
+  font-size: 2em;
+  font-style: Arial;
+}
+
+/* line 39, ../sass/screen.scss */
+#header {
+  color: #f2f2f2;
+  background-color: #1c1c1c;
+}
+/* line 43, ../sass/screen.scss */
+#header h1 {
+  font-weight: bold;
+  font-size: 4em;
+  font-style: Arial;
+}
+/* line 48, ../sass/screen.scss */
+#header h2 {
+  font-weight: bold;
+  font-size: 2em;
+  font-style: Arial;
+}
+
+/* line 57, ../sass/screen.scss */
+#footer {
+  background-color: #fafafa;
+  bottom: 0;
+  box-shadow: 0 -3px 3px #ccc;
+  color: #666;
+  font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  position: fixed;
+  text-align: center;
+  text-shadow: 0 0 10px #bbb;
+  width: 100%;
+}
+
+/* line 77, ../sass/screen.scss */
+#layout {
+  margin: auto;
+  left: 0px;
+  top: 0px;
+  background-color: #FFFFFF;
+  height: 700px;
+}
+
+/* line 85, ../sass/screen.scss */
+#submit {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px;
+  margin: 10px 10px 20px 10px;
+  border: 1px solid #ccc;
+  background: #ACFA58;
+  border-radius: 8px 8px 8px 8px;
+}
+
+/* line 95, ../sass/screen.scss */
+#submit:hover {
+  background: #ddd;
+}
+
+/* line 100, ../sass/screen.scss */
+#pedido_form {
+  background-color: #FFFFFF;
+  border-left: 5px solid #555;
+  border-right: 5px solid #555;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px 0 #aaa;
+  margin: 1% 1% 1% 1%;
+  padding: 1% 1% 1% 1%;
+}
+/* line 110, ../sass/screen.scss */
+#pedido_form tbody th, #pedido_form tbody td {
+  padding: 5px;
+}
+
+/* line 115, ../sass/screen.scss */
+#caja {
+  background-color: #FFFFFF;
+  border-left: 5px solid #555;
+  border-right: 5px solid #555;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px 0 #aaa;
+  margin: 1% 1% 1% 1%;
+  padding: 1% 1% 1% 1%;
+}
+
+/* line 134, ../sass/screen.scss */
+#tabla caption {
+  text-align: center;
+  font: bold 16px arial, helvetica, sans-serif;
+  background: transparent;
+  padding: 6px 4px 8px 0px;
+  color: #CC00FF;
+  text-transform: uppercase;
+}
+/* line 142, ../sass/screen.scss */
+#tabla thead, #tabla tfoot {
+  text-align: left;
+  height: 30px;
+}
+/* line 147, ../sass/screen.scss */
+#tabla thead th, #tabla tfoot th {
+  padding: 10px;
+}
+/* line 150, ../sass/screen.scss */
+#tabla table a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 155, ../sass/screen.scss */
+#tabla table a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+/* line 159, ../sass/screen.scss */
+#tabla tr.odd {
+  background: #f1f1f1;
+}
+/* line 162, ../sass/screen.scss */
+#tabla tbody th, #tabla tbody td {
+  padding: 5px;
+  border-collapse: collapse;
+  border: 1px solid #666666;
+  font: normal 12px verdana, arial, helvetica, sans-serif;
+  color: #363636;
+  background: #f6f6f6;
+  text-align: left;
+}

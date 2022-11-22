@@ -1,0 +1,13 @@
+utn_security_homepage:
+    pattern:  admin/hello/{name}
+    defaults: { _controller: UTNSecurityBundle:Default:index }
+login:
+    path:   /login
+    defaults: { _controller: UTNSecurityBundle:Security:login }
+login_check:
+    path:   /login_check
+logout:
+    pattern:   /logout
+utn_security_cajalogin:
+    pattern:  caja
+    defaults: { _controller: UTNSecurityBundle:Default:cajaLogin }

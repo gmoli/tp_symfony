@@ -1,0 +1,65 @@
+{% extends 'TPpedidosBundle::layout.html.twig' %}
+
+{% block content %}
+<h2>Ingrese nuevo pedido</h2>    
+<div id="pedido_form">     
+<form action="{{ path('pedido_new') }}" method="post">
+{{ form_errors(form) }}
+
+
+<table>
+    <tr>
+        <td>{{ form_label(form.nombre) }}</td>
+        <td>{{ form_widget(form.nombre) }}</td>
+        <td>{{ form_errors(form.nombre) }}</td>
+            
+    <tr/> 
+
+        <tr>
+        <td>{{ form_label(form.telefono) }}</td>
+        <td>{{ form_widget(form.telefono) }}</td>
+        <td>{{ form_errors(form.telefono) }}</td>
+    
+    <tr/>   
+    
+        <tr>
+        <td>{{ form_label(form.email) }}</td>
+        <td>{{ form_widget(form.email) }}</td>
+        <td>{{ form_errors(form.email) }}</td>
+            
+    <tr/>   
+    
+        <tr>
+        <td>{{ form_label(form.descripcion) }}</td>
+        <td>{{ form_widget(form.descripcion) }}</td>
+        <td>{{ form_errors(form.descripcion) }}</td>
+            
+    <tr/>   
+    
+            
+    
+    
+        <tr>
+        <td>{{ form_label(form.captcha) }}</td>
+        <td>{{ form_widget(form.captcha) }}</td>
+        <td>{{ form_errors(form.captcha) }}</td>
+
+            
+    <tr/>  
+
+{{ form_rest(form) }}
+    
+    
+<tr><td></td><td><input type="submit" id="submit" /></td><td></td></tr>
+</table>    
+</form>
+</div> 
+
+<br/>
+ <div id="caja">  
+<li> <a href="{{url('logout')}}">Logout</a>    </li><br/>
+
+ </div>
+{% endblock %}
+
+

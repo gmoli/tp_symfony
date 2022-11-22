@@ -1,0 +1,39 @@
+{% extends 'TPpedidosBundle::layout.html.twig' %}
+{% block content %} 
+    <h2>Lista </h2>
+  <div id="caja">  
+     
+ <a href="{{url('logout')}}">Logout</a>    
+  </div>
+ <div id="caja">  
+    <div id="tabla">   
+        <table>    
+            <tr>        
+                <th><a>ID</a></th>   
+                <th><a>Nombre</a></th>
+                <th><a>Tel.</a></th>       
+                <th><a>Email</a></th>    
+                <th><a>Descripción</a></th> 
+                <th><a>Fecha</a></th>  
+                <th><a>Estado</a></th>  
+
+            </tr>    
+            {% for pedido in pedidos %}    
+                <tr>        
+                    <td><a href="{{ path('pedido_edit', { 'id_pedido': pedido.idPedido }) }}">{{ pedido.idPedido }}</td>        
+                    <td><a href="{{ path('pedido_edit', { 'id_pedido': pedido.idPedido }) }}">{{ pedido.nombre }}</td>
+                    <td>{{ pedido.telefono }}</td>        
+                    <td>{{ pedido.email }}</td>
+                    <td>{{ pedido.descripcion }}</td>
+                    <td>{{ pedido.fechaHora | date("m/d/Y -- H:i:s") }}</td>
+                    <td>{{ pedido.estado }}</td>
+
+
+                </tr>    
+            {% endfor %}
+        </table>  
+    </div>
+ </div>        
+ <br/>
+
+{% endblock %}

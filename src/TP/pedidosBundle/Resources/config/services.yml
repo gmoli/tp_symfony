@@ -1,0 +1,7 @@
+parameters:
+#    t_ppedidos.example.class: TP\pedidosBundle\Example
+
+services:
+#    t_ppedidos.example:
+#        class: %t_ppedidos.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

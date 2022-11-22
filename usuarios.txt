@@ -1,0 +1,10 @@
+Administrador
+
+usuario: admin
+clave: admin
+-------------
+Usuario
+
+Usuario: user
+Clave: 1234
+-------------

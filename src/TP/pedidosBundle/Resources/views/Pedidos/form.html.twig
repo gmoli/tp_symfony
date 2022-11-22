@@ -1,0 +1,27 @@
+
+
+{% block content %}    	
+ 
+<form action="{{ path('pedido_form') }}" method="post" {{ form_enctype(form) }}>
+               
+
+
+                                
+{{ form_row(form.nombre) }}
+{{ form_row(form.telefono) }}
+{{ form_row(form.email) }}
+{{ form_row(form.descripcion) }}
+		 
+<div ><input class="pedidosubmit" type="submit" id="submit"/></div>
+
+
+                               
+
+
+</form>     
+{% endblock %}
+
+
+
+
+

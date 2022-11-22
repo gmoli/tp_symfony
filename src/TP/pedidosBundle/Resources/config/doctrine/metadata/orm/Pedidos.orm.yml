@@ -1,0 +1,58 @@
+Pedidos:
+    type: entity
+    table: pedidos
+    id:
+        idPedido:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: id_pedido
+            generator:
+                strategy: IDENTITY
+    fields:
+        nombre:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            comment: ''
+        telefono:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        email:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        tipoPedido:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+            column: tipo_pedido
+        descripcion:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            comment: ''
+        fechaHora:
+            type: datetime
+            nullable: false
+            comment: ''
+            default: CURRENT_TIMESTAMP
+            column: fecha_hora
+        estado:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            comment: ''
+    lifecycleCallbacks: {  }

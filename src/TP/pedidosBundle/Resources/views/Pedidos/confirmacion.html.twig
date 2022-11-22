@@ -1,0 +1,11 @@
+{% extends 'TPpedidosBundle::layout.html.twig' %}
+{% block content %} 
+    <h2>Gracias por realizar su pedido</h2>
+ <br/> <br/>
+ <div id="caja">  
+    <li>  <a href="{{url('pedido_new')}}">Nuevo pedido</a></li>
+ <br/>
+   <li> <a href="{{url('logout')}}">Logout</a>    </li>
+ </div>  
+  
+{% endblock %}

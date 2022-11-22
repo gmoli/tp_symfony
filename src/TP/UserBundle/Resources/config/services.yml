@@ -1,0 +1,7 @@
+parameters:
+#    tp_user.example.class: TP\UserBundle\Example
+
+services:
+#    tp_user.example:
+#        class: %tp_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

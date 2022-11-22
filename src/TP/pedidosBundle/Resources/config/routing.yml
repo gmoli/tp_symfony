@@ -1,0 +1,36 @@
+t_ppedidos_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: TPpedidosBundle:Default:index }
+
+pedido_listar:
+    pattern:  /admin/pedido/listar
+    defaults: { _controller: TPpedidosBundle:Pedidos:listar }
+
+pedido_new:
+    pattern:  /usuario/pedido/new
+    defaults: { _controller: TPpedidosBundle:Pedidos:new }  
+
+pedido_confirmacion:
+    pattern:  /usuario/pedido/confirmacion
+    defaults: { _controller: TPpedidosBundle:Pedidos:confirmacion }  
+
+pedido_home:
+    pattern:  /pedido/home
+    defaults: { _controller: TPpedidosBundle:Pedidos:index}  
+pedido_edit:
+    pattern:  /admin/pedido/edit/{id_pedido}
+    defaults: { _controller: TPpedidosBundle:Pedidos:edit}
+
+ 
+    
+
+
+login:
+    path: /login
+    defaults: { _controller: TPSecurityBundle:Security:login }
+login_check:
+    path: /login_check
+    
+logout:
+    pattern: /logout
+    
